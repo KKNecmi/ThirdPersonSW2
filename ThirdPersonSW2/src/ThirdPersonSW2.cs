@@ -231,7 +231,7 @@ public class ThirdPersonSW2 : BasePlugin
             {
                 RemoveCameraEntity(cam);
             }
-            smoothThirdPersonPool.Remove(player.Slot); // Remove from dictionary
+            smoothThirdPersonPool.Remove(player.Slot); 
 
             if (Config.StripOnUse)
             {
@@ -327,31 +327,6 @@ public class ThirdPersonSW2 : BasePlugin
     {
         return player?.Pawn?.V_angle ?? QAngle.Zero;
     }
-
-    // private bool IsInfrontOfPlayer(IPlayer attacker, IPlayer victim)
-    // {
-    //     if (attacker?.Pawn == null || victim?.Pawn == null)
-    //         return false;
-
-    //     try
-    //     {
-    //         var attackerPos = attacker.Pawn.EyePosition ?? Vector.Zero;
-    //         var victimPos = victim.Pawn.EyePosition ?? Vector.Zero;
-    //         var attackerAngles = attacker.Pawn.V_angle;
-
-    //         attackerAngles.ToDirectionVectors(out var attackerForward, out var right, out var up);
-    //         var directionToVictim = (victimPos - attackerPos).Normalized();
-
-    //         float dot = attackerForward.Dot(directionToVictim);
-
-    //         return dot > 0.7f;
-    //     }
-    //     catch (Exception ex)
-    //     {
-    //         Core.Logger.LogError($"Error checking if player is in front: {ex.Message}");
-    //         return false;
-    //     }
-    // }
 
     private void StripWeapons(IPlayer player)
     {
