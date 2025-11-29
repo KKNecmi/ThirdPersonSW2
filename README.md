@@ -21,8 +21,8 @@ ThirdPerson Plugin For CounterStrike 2
 > Requires [SwiftlyS2](https://github.com/swiftly-solution/swiftlys2)
 
 1. [Download DLL from Releases](https://github.com/KKNecmi/ThirdPersonSW2/releases/latest)
-2. Place the plugin `.dll` in your `swiftlys2/plugins/ThirdPersonRevamped` directory.
-3. (Optional) Customize the config file at `configs/plugins/ThirdPersonRevamped/ThirdPersonRevamped.json`.
+2. Place the plugin `.dll` in your `swiftlys2/plugins/ThirdPersonSW2` directory.
+3. (Optional) Customize the config file at `configs/plugins/ThirdPersonSW2/ThirdPersonSW2.json`.
 
 ---
 
@@ -44,3 +44,4 @@ ThirdPerson Plugin For CounterStrike 2
   "ConfigVersion": 1
 }
 ```
+
